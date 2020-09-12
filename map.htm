@@ -1,24 +1,33 @@
 <!DOCTYPE HTML>
-<html>
-<head><style type="text/css">a {text-decoration: none}</style>
+<html><head>
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){    
+    //Check if the current URL contains '#'
+    if(document.URL.indexOf("#")==-1){
+        // Set the URL to whatever it was plus "#".
+        url = document.URL+"#";
+        location = "#";
+
+        //Reload the page ONCE
+		        location.reload(true);
+    }
+});
+</script>
+
+
+
+
+<STYLE>
+<!--
+A{text-decoration:none}
+-->
+</STYLE>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>The BRICK CHURCH of DIGHTON, MA</title>
-
-
-
-
-<!--
-
-Menu 
-
--->
-<script type="text/javascript" src="../Menu/Menu.js"></script>
-<!--
-
-Menu 
-
--->
-
+<title>The BRICK CHURCH
+ of DIGHTON, MA</title>
 
 
 
@@ -35,7 +44,6 @@ body {
 	padding: 0;
 	color: #000;
 	background-color: #644221;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 /* ~~ Element/tag selectors ~~ */
@@ -47,6 +55,7 @@ h1, h2, h3, h4, h5, h6, p {
 	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
 	padding-right: 15px;
 	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	color: #EDEDED;
 }
 a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
 	border: none;
@@ -83,8 +92,11 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 */
 
 .content {
-
-	padding: 10px 0;
+	padding-top: 0px;
+	padding-right: 0;
+	padding-bottom: 10px;
+	padding-left: 0;
+	font-size: 18px;
 }
 
 /* ~~ The footer ~~ */
@@ -118,49 +130,173 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 .container .header div table tr td div .style2 {
 	font-family: Verdana, Geneva, sans-serif;
 }
-.container .content table tr td form p label div strong {
-	color: #7F0000;
-}
-.container .header div table tr td div strong .style2 {
+.container .header div table tr .style2 strong a {
 	color: #FFF;
 }
 .container .header div table tr td div strong {
 	color: #FFF;
 }
-.container .header div table tr td {
-	color: #FFF;
+.style1 {	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 20px;
 }
-.container .header div table {
-	color: #FFF;
-}
-.container .header div table tr .style2 strong a {
-	color: #FFF;
-}
-.container table tr td form {
-	color: #7F0000;
-}
-.container table tr td form {
+.style4 {color: #000000}
+.container .content .content div .style1 .style4 {
 	font-family: Verdana, Geneva, sans-serif;
 }
-.container div .style2 {
-	color: #FFF;
-}
-.container div .style2 tr .style2 strong a {
+.container .content .content div .style1 .style4 {
 	font-family: Verdana, Geneva, sans-serif;
-}
-.container div .style2 tr .style2 strong a {
-	color: #FFF;
 }
 -->
-</style></head>
+</style>
+
+
+<!--
+
+New Menu
+
+-->
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #890000;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #890000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #777;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+
+
+
+
+
+</head>
 
 <body bgcolor="#8A0000">
 
 <div class="container">
-  <div class="container"><!-- end .header -->
+  <div class="header"><!-- end .header -->
     <div align="center">
-      <p align="center"><img src="images/BrickLogo.jpg" width="913" height="181"></p>
+  <p align="center"><img src="images/BrickLogo.jpg" width="913" height="181"></p>
+  <div class="navbar">
+  <a href="http://www.mybrickchurch.org">Home</a>
+   <a href="https://brickchurch.github.io/sermons.htm">Sermons</a>
+    <a href="https://brickchurch.github.io/map.htm">Directions</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">Connect 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://brickchurch.github.io/connect.htm">Connect Card</a>
+      <a href="https://brickchurch.github.io/prayer.htm">Prayer Card</a>
+      <a href="#">Questions</a>
+      <a href="https://brickchurch.github.io/questions.htm">Comments</a>
+    </div>
+     </div>
+ 
+    
+    <div class="dropdown">
+    <button class="dropbtn">Our Pastor 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://brickchurch.github.io/pastor.htm">About our Pastor</a>
+      <a href="https://brickchurch.github.io/books.htm">Books by Rev</a>
+        </div> 
+      </div> 
       
+        <a href="https://brickchurch.github.io/calendar.htm">Calendar</a>
+  
+
+      
+        <div class="dropdown">
+    <button class="dropbtn">Social Media 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://www.facebook.com/groups/752287171491927">Facebook</a>
+      <a href="https://www.youtube.com/watch?v=dRI8owHjRlM&list=PLhphTZENqG6wddZDYiam3bD0dfmau-POe">Youtube</a>
+        </div> 
+      </div> 
+        <div class="dropdown">
+    <button class="dropbtn">Mobile App 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="http://tiny.cc/brickapp-APK">Android</a>
+      <a href="https://tiny.cc/brickapp-IOS">iPhone</a>
+        </div> 
+      </div> 
+    </div>
+  <!--
+
+End Menu 
+
+-->
       
       
      
