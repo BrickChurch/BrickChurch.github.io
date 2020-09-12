@@ -9,15 +9,84 @@
 
 <!--
 
-Menu 
-
--->
-<script type="text/javascript" src="../Menu/Menu.js"></script>
 <!--
 
-Menu 
+New Menu
 
 -->
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #890000;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #890000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #777;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+
 
 
 
@@ -158,6 +227,73 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 
 <div class="container">
   <div class="container"><!-- end .header -->
+      <div class="navbar">
+  <a href="http://www.mybrickchurch.org">Home</a>
+   <a href="https://brickchurch.github.io/sermons.htm">Sermons</a>
+    <a href="https://brickchurch.github.io/map.htm">Directions</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">Connect 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://brickchurch.github.io/connect.htm">Connect Card</a>
+      <a href="https://brickchurch.github.io/prayer.htm">Prayer Card</a>
+      <a href="#">Questions</a>
+      <a href="https://brickchurch.github.io/questions.htm">Comments</a>
+    </div>
+     </div>
+ 
+    
+    <div class="dropdown">
+    <button class="dropbtn">Our Pastor 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://brickchurch.github.io/pastor.htm">About our Pastor</a>
+      <a href="https://brickchurch.github.io/books.htm">Books by Rev</a>
+      </div> 
+      </div> 
+      
+        <a href="https://brickchurch.github.io/calendar.htm">Calendar</a>
+  
+
+      
+        <div class="dropdown">
+    <button class="dropbtn">Social Media 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://www.facebook.com/groups/752287171491927">Facebook</a>
+      <a href="https://www.youtube.com/watch?v=dRI8owHjRlM&list=PLhphTZENqG6wddZDYiam3bD0dfmau-POe">Youtube</a>
+        </div> 
+      </div> 
+        <div class="dropdown">
+    <button class="dropbtn">Mobile App 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="http://tiny.cc/brickapp-APK">Android</a>
+      <a href="https://tiny.cc/brickapp-IOS">iPhone</a>
+        </div> 
+      </div> 
+</div>
+  <!--
+
+End Menu 
+
+-->
+
+<!--
+
+End Menu 
+
+--></head>
+
+<body bgcolor="#8A0000">
+
+<div class="container">
+<div class="container"><!-- end .header -->
     <div align="center">
       <p align="center"><!--
 
@@ -203,6 +339,17 @@ End Menu
 <div class="container">
   <p class="footer">&nbsp;</p>
 <!-- end .footer --></div>
-<!-- end .container -->
+<!-- end .container --><!--
+
+End Menu 
+
+-->
+
+<!--
+
+End Menu 
+
+-->
+
 </body>
 </html>
