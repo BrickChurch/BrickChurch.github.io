@@ -31,19 +31,6 @@ A{text-decoration:none}
 
 
 
-<!--
-
-Menu 
-
--->
-<script type="text/javascript" src="../Menu/Menu.js"></script>
-<!--
-
-Menu 
-
--->
-
-
 
 
 
@@ -161,59 +148,175 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	font-family: Verdana, Geneva, sans-serif;
 }
 -->
-</style></head>
+</style>
+
+
+<!--
+
+New Menu
+
+-->
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #890000;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #890000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #777;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+
+
+
+
+
+</head>
 
 <body bgcolor="#8A0000">
 
 <div class="container">
   <div class="header"><!-- end .header -->
     <div align="center">
-      <p align="center"><img src="images/BrickLogo.jpg" width="913" height="181"></p>
+  <p align="center"><img src="images/BrickLogo.jpg" width="913" height="181"></p>
+  <div class="navbar">
+  <a href="http://www.mybrickchurch.org">Home</a>
+   <a href="https://brickchurch.github.io/sermons.htm">Sermons</a>
+    <a href="https://brickchurch.github.io/map.htm">Directions</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">Connect 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://brickchurch.github.io/connect.htm">Connect Card</a>
+      <a href="https://brickchurch.github.io/prayer.htm">Prayer Card</a>
+      <a href="#">Questions</a>
+      <a href="https://brickchurch.github.io/questions.htm">Comments</a>
+    </div>
+     </div>
+ 
+    
+    <div class="dropdown">
+    <button class="dropbtn">Our Pastor 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://brickchurch.github.io/pastor.htm">About our Pastor</a>
+      <a href="https://brickchurch.github.io/books.htm">Books by Rev</a>
+        </div> 
+      </div> 
       
-         
+        <a href="https://brickchurch.github.io/calendar.htm">Calendar</a>
+  
+
       
-     
-
-<!--
-
-Start Menu 
-
--->
-
-<div id="Menu"></div>
-<!--
+        <div class="dropdown">
+    <button class="dropbtn">Social Media 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://www.facebook.com/groups/752287171491927">Facebook</a>
+      <a href="https://www.youtube.com/watch?v=dRI8owHjRlM&list=PLhphTZENqG6wddZDYiam3bD0dfmau-POe">Youtube</a>
+        </div> 
+      </div> 
+        <div class="dropdown">
+    <button class="dropbtn">Mobile App 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="http://tiny.cc/brickapp-APK">Android</a>
+      <a href="https://tiny.cc/brickapp-IOS">iPhone</a>
+        </div> 
+      </div> 
+    </div>
+  <!--
 
 End Menu 
 
 -->
 
+     
 
 
 
-
-
-
-
-
-
-
-
-       
       
       
-      
-      
-      
-      
-    </div>
-  </div>
+</div>
+ 
   <div class="content"> 
     <div align="center"> 
       <p><img src="images/TheBrickPic.jpg" width="865" height="326"></p>
 </div>
     <div class="content">
-      <div align="center"><span class="style1"><span class="style4">1068 Center Street Dighton,  MA 02715</span><span class="style2">----</span> <span class="style4">Phone: 508-322-1323</span></span></div>
+      <div align="center"><span class="style1"><span class="style4">1068 Center Street Dighton,  MA 02715</span><span class="style2">&nbsp;</span> <span class="style4">Phone: 508-322-1323</span></span></div>
     </div>
+   
+    
+    
+    
   </div>
   <div class="footer">
     <p class="footer">
@@ -229,27 +332,21 @@ End Menu
       <div align="center">
         <table width="947" border="0">
           <tr>
-            <td width="187" align="center" valign="top"><div align="left">
-              <table width="140" border="0">
-                <tr>
-                  <td width="19">&nbsp;</td>
-                  <td width="130" align="left" valign="top"><a href="http://mybrickchurch.org/donate.htm"><img src="images/donate.png" alt="" width="86" height="48"></a></td>
-                </tr>
-              </table>
-              <div></div>
+            <td width="223" align="center" valign="top"><div align="left">
+              <div>
+                <table width="140" border="0">
+                  <tr>
+                    <td width="19">&nbsp;</td>
+                    <td width="130" align="left" valign="top"><a href="http://mybrickchurch.org/donate.htm"><img src="images/donate.png" alt="" width="86" height="48"></a></td>
+                  </tr>
+                </table>
+              </div>
              
              
              
             </div></td>
-            <td width="637" align="center" valign="top">Menu made with <a href="https://www.dropdownmenugenerator.com/" title="Dropdown Menu Generator">Dropdown Menu Generator</a></td>
-            <td width="109">
-            
-                
-              <div align="right">
-                <!-- Start Bravenet.com Service Code -->
-                <script type="text/javascript" src="http://pub5.bravenet.com/counter/code.php?id=408079&usernum=359916895&cpv=2"></script>
-  <!-- End Bravenet.com Service Code -->
-            </div></td>
+            <td width="601" align="center" valign="top">&nbsp;</td>
+            <td width="109">&nbsp;</td>
           </tr>
         </table>
       </div>
