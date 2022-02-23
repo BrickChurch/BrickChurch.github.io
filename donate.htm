@@ -1,6 +1,25 @@
 <!DOCTYPE HTML>
 <html><head>
 
+
+
+<script type="text/javascript">
+$(document).ready(function(){    
+    //Check if the current URL contains '#'
+    if(document.URL.indexOf("#")==-1){
+        // Set the URL to whatever it was plus "#".
+        url = document.URL+"#";
+        location = "#";
+
+        //Reload the page ONCE
+		        location.reload(true);
+    }
+});
+</script>
+
+
+
+
 <STYLE>
 <!--
 A{text-decoration:none}
@@ -10,19 +29,6 @@ A{text-decoration:none}
 <title>The BRICK CHURCH
  of DIGHTON, MA</title>
 
-
-
-<!--
-
-Menu 
-
--->
-<script type="text/javascript" src="../Menu/Menu.js"></script>
-<!--
-
-Menu 
-
--->
 
 
 
@@ -141,85 +147,283 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 .container .content .content div .style1 .style4 {
 	font-family: Verdana, Geneva, sans-serif;
 }
-.style5 {	color: #000000;
-	font-weight: bold;
-	font-size: 14px;
-}
-.style6 {color: #000000; font-size: 14px; }
 -->
-</style></head>
+</style>
+
+
+<!--
+
+New Menu
+
+-->
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #890000;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #890000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #777;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.container div p {
+	color: #00F;
+}
+.container div {
+	color: #00F;
+}
+.container div p {
+	font-family: Verdana, Geneva, sans-serif;
+}
+.container div p strong {
+	color: #800000;
+}
+</style>
+
+
+
+
+
+</head>
+
+
+
 
 <body bgcolor="#8A0000">
 
 <div class="container">
   <div class="header"><!-- end .header -->
     <div align="center">
-      <p align="center"><img src="images/BrickLogo.jpg" width="913" height="181"></p>
+  <p align="center"><img src="images/BrickLogo.jpg" width="913" height="181">
+  
+  
+ 
+  
+  
+  
+  
+<!--
+
+<!--
+
+New Menu
+
+-->
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #890000;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #890000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #777;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+
+
+
+
+
+</head>
+
+<body bgcolor="#8A0000">
+
+  <div class="container"><!-- end .header -->
+    <div align="center">
+    
+      <div class="navbar"> <a href="http://www.mybrickchurch.org">Home</a>
+<a href="https://brickchurch.github.io/sermons.htm">Sermons</a>
+    <a href="https://brickchurch.github.io/map.htm">Directions</a>
+   
+   
+<div class="dropdown">
+    <button class="dropbtn">Connect 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://brickchurch.github.io/connect.htm">Connect Card</a>
+      <a href="https://brickchurch.github.io/prayer.htm">Prayer Card</a>
       
-         
-      
+      <a href="https://brickchurch.github.io/questions.htm">Questions</a>
+      <a href="https://brickchurch.github.io/questions.htm">Comments</a>
+    
+    
+ <a href="https://brickchurch.github.io/directory.htm">Directory</a>
+    </div>
+     </div>
+   
+        <a href="https://brickchurch.github.io/calendar.htm">Calendar</a>
+  
+<div class="dropdown">
+    <button class="dropbtn">Social Media 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://www.facebook.com/groups/752287171491927">Facebook</a>
+      <a href="https://www.youtube.com/watch?v=dRI8owHjRlM&list=PLhphTZENqG6wddZDYiam3bD0dfmau-POe">Youtube</a>
+        </div> 
+      </div> 
      
-
-<!--
-
-Start Menu 
-
--->
-
-<div id="Menu"></div>
-<!--
-
-End Menu 
-
--->
-
-
-
-
-
-
-
-
-
-
-
-
-       
-      
-      
-      
-      
-      
-      
+        
+        <div class="dropdown">
+    <button class="dropbtn">Mobile App 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="http://tiny.cc/brickapp-APK">Android</a>
+      <a href="https://tiny.cc/brickapp-IOS">iPhone</a>  
+       <a href="https://dashboard.gappsy.com/var/apps/browser/index-prod.html#/5f14d652ec74d">Web App</a>
+   
+        
+        </div> 
+        
+        
+        
+      </div> 
+        <a href="https://dashboard.gappsy.com/var/apps/browser/index-prod.html#/5f14d652ec74d">Web App</a>
+     
+     
     </div>
-  </div>
-  <div class="content"> 
-    <div align="center"> 
-      <p class="style6">&nbsp;</p>
-      <p class="style6">The <strong>Brick Church</strong> strives to be a honorable stewards of every gift entrusted to us. </p>
-      <p class="style6">We are careful to see that all donations are used for their intended purposes. </p>
-      <p class="style6">Our Church is a 501(c)3 tax-exempt organization. </p>
-      <p class="style6">Thus, all donations, both monetary and material, are deductible for tax purposes. </p>
-      <p class="style6">To make an online donation click  the donate buttons below. </p>
-      <p class="style6">You will be taken to a secure Paypal donation page. </p>
-      <p class="style6">(You do need a Paypal account to make a donation). </p>
-      <p class="style5">For General Tithes & Offerings click the button below.</p>
-      <p class="style5">
-      
-      
-      
-      
-     <form action="https://www.paypal.com/donate" method="post" target="_top">
-<input type="hidden" name="hosted_button_id" value="DSDUDZQVEE9E6" />
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-</form>
-     <p class="style5">&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>THE BRICK CHURCH strives to be a honorable stewards of every gift entrusted to us.</span> </p>
+<p>We are careful to see that all donations are used for their intended purposes.      </p>
+      <p>Our Church is a 501(c)3 tax-exempt organization.      </p>
+      <p>All donations,      both monetary and material, are deductible for tax purposes.      </p>
+      <p>To make an online donation click the donate buttons below.      </p>
+      <p>You will be taken to a secure Paypal donation page. </p>
+      <p><strong>* </strong>You do need a Paypal account to make a donation.      </p>
+      <p>For General Tithes & Offerings click the button below.      </p>
+      <p><strong>1068 Center Street Dighton, MA 02715 ---- Phone: 508-322-1323</strong>      </p>
+      <form action="https://www.paypal.com/donate" method="post" target="_top">
+        <input type="hidden" name="hosted_button_id" value="DSDUDZQVEE9E6" />
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+      </form>
+      <p>&nbsp;</p>
     </div>
-    <div class="content">
-      <div align="center"><span class="style1"><span class="style4">1068 Center Street Dighton,  MA 02715</span><span class="style2">----</span> <span class="style4">Phone: 508-322-1323</span></span></div>
-    </div>
-  </div>
   <div class="footer">
     <p class="footer">
     
@@ -234,8 +438,9 @@ End Menu
       <div align="center">
         <table width="947" border="0">
           <tr>
-            <td width="824" align="center" valign="top"><div align="left"></div></td>
-            <td width="107">&nbsp;</td>
+            <td width="223" align="center" valign="top">&nbsp;</td>
+            <td width="601" align="center" valign="top">&nbsp;</td>
+            <td width="109">&nbsp;</td>
           </tr>
         </table>
       </div>
