@@ -1,0 +1,387 @@
+<!DOCTYPE HTML>
+<html><head>
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){    
+    //Check if the current URL contains '#'
+    if(document.URL.indexOf("#")==-1){
+        // Set the URL to whatever it was plus "#".
+        url = document.URL+"#";
+        location = "#";
+
+        //Reload the page ONCE
+		        location.reload(true);
+    }
+});
+</script>
+
+
+
+
+<STYLE>
+<!--
+A{text-decoration:none}
+-->
+</STYLE>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>The BRICK CHURCH
+ of DIGHTON, MA</title>
+
+
+
+
+
+
+
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #644221;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	color: #EDEDED;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #FFF;
+	text-decoration: none; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #FFF;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	background-color: #FFF;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background-color: #FFF;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding-top: 0px;
+	padding-right: 0;
+	padding-bottom: 10px;
+	padding-left: 0;
+	font-size: 18px;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	background-color: #644221;
+	padding-top: 0px;
+	padding-right: 0;
+	padding-bottom: 2px;
+	padding-left: 0;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.style2 {color: #FFFFFF}
+.container .header div table tr td div .style2 {
+	color: #FFF;
+}
+.container .header div table tr td div .style2 {
+	font-family: Verdana, Geneva, sans-serif;
+}
+.container .header div table tr .style2 strong a {
+	color: #FFF;
+}
+.container .header div table tr td div strong {
+	color: #FFF;
+}
+.style1 {	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+}
+.style4 {color: #000000}
+.container .content .content div .style1 .style4 {
+	font-family: Verdana, Geneva, sans-serif;
+}
+.container .content .content div .style1 .style4 {
+	font-family: Verdana, Geneva, sans-serif;
+}
+-->
+</style>
+
+
+<!--
+
+<!--
+
+New Menu
+
+-->
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #FFF;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #890000;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #890000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #777;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.content .content div .style1 .style4 {
+	color: #FFF;
+}
+.content .content div {
+	color: #FFF;
+}
+.content .content div {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.footer .footer div table tr td {
+	color: #FFF;
+}
+.footer .footer div table tr td {
+	font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+
+
+
+
+
+</head>
+
+<body>
+
+  <div class="container"><!-- end .header -->
+    <div align="center">
+    
+      <div class="navbar"> <a href="http://www.mybrickchurch.com">Home</a>
+<a href="https://brickchurch.github.io/sermons.htm">Sermons</a>
+    <a href="https://brickchurch.github.io/map.htm">Directions</a>
+   
+   
+<div class="dropdown">
+    <button class="dropbtn">Connect 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://brickchurch.github.io/connect.htm">Connect Card</a>
+      <a href="https://brickchurch.github.io/prayer.htm">Prayer Card</a>
+      
+      <a href="https://brickchurch.github.io/questions.htm">Questions</a>
+      <a href="https://brickchurch.github.io/questions.htm">Comments</a>
+    
+    
+ <a href="https://brickchurch.github.io/directory.htm">Directory</a>
+    </div>
+     </div>
+   
+        <a href="https://brickchurch.github.io/calendar.htm">Calendar</a>
+  
+<div class="dropdown">
+    <button class="dropbtn">Social Media 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://www.facebook.com/groups/752287171491927">Facebook</a>
+      <a href="https://www.youtube.com/watch?v=dRI8owHjRlM&list=PLhphTZENqG6wddZDYiam3bD0dfmau-POe">Youtube</a>
+        </div> 
+      </div> 
+     
+        
+        <div class="dropdown">
+    <button class="dropbtn">Mobile App 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="http://tiny.cc/brickapp-APK">Android</a>
+      <a href="https://tiny.cc/brickapp-IOS">iPhone</a>  
+       <a href="https://dashboard.gappsy.com/var/apps/browser/index-prod.html#/5f14d652ec74d">Web App</a>
+   
+        
+        </div> 
+        
+        
+        
+      </div> 
+        <a href="https://brickchurch.github.io/password.htm">Event Planner</a>
+     
+     
+    </div>
+  </div> 
+        <a href="http://mybrickchurch.com/password">Event Planner</a>
+     
+    
+</div>
+      <!--
+
+End Menu 
+
+-->
+
+<!--
+
+End Menu 
+
+-->
+     
+
+
+
+
+      
+      
+</div>
+<div class="footer">
+  <p class="footer">
+    
+    </p>
+    <div align="right" class="footer"><!-- end .footer -->
+    
+    
+    
+
+   
+    
+      <div align="center">
+        <table width="947" border="0">
+          <tr>
+            <td align="center" valign="top" bgcolor="#FFFFFF">&nbsp;</td>
+            <td align="center" valign="top" bgcolor="#FFFFFF"><div align="center"><img src="pngs/1A.png" width="133" height="111"></div></td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#FFFFFF">&nbsp;</td>
+            <td align="center" valign="top" bgcolor="#FFFFFF"><strong>the BRICK CHURCH App</strong></td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#FFFFFF">&nbsp;</td>
+            <td align="center" valign="middle" bgcolor="#FFFFFF"><a href="https://play.google.com/store/apps/details?id=com.gappsy.dashboard.www.android5f14d652ec706"><img src="pngs/google.png" width="203" height="54"></a></td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#FFFFFF">&nbsp;</td>
+            <td height="2" align="center" valign="top" bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#FFFFFF">&nbsp;</td>
+            <td align="center" valign="top" bgcolor="#FFFFFF"><a href="https://apps.apple.com/us/app/brick-church-app/id1525097221"><img src="pngs/apple.png" width="212" height="57"></a></td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="140" align="center" valign="top" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="689" align="center" valign="top" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="104" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+<!-- end .container --></div>
+</body>
+</html>
